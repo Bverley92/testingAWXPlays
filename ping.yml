@@ -1,0 +1,5 @@
+- name: Ping All Switches
+  hosts: all
+  tasks:
+    - name: ping all switches
+      ansible.builtin.ping:
