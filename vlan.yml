@@ -5,7 +5,7 @@
     - name: Run show vlan Command
       arista.eos.eos_command:
         commands:
-          - command: show vlan 10
+          - command: show vlan {{ vlan_id }}
             output: json
       register: show_vlan_response
     - name: Print show vlan Response
