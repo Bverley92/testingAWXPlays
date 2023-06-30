@@ -1,5 +1,5 @@
 - name: Check Existing VLANs
-  hosts: all
+  hosts: switches
   gather_facts: no
   tasks:
     - name: Run show vlan Command
